@@ -2,17 +2,9 @@
 
 # Techstack :
 
-- PHP
-- Laravel Breeze
-- Tailwind CSS
-- JavaScript
-- PHPUnit
-- MySQL
+- PHP, Laravel Breeze, Tailwind CSS, JavaScript, PHPUnit, MySQL
 
-- Java
-- Spring Boot
-- JUnit
-- Mysql
+- Java, Spring Boot, JUnit, Mysql
 
 # Arsitektur Aplikasi :
 
