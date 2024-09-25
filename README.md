@@ -35,7 +35,7 @@ id, lob, penyebab_klaim, periode, id_wilker, tgl_keputusan_klaim, jumlah_terjami
 - Field" pada table api_logs :
 id, processdate, totaldata, deliverystatus, lastupd_process, created_by, created_at, updated_at
 
-- Nama database Spring Boot : db_klaim_lob 
+- Nama database Spring Boot : klaimdb 
 
 - Field" pada table klaim : 
 id, lob, penyebab_klaim, periode, nilai_beban_klaim
