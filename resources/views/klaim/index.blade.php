@@ -34,10 +34,10 @@
                     <table class="border-collapse table-auto w-full text-sm mb-5">
                         <thead>
                             <tr class="bg-white">
-                                <th class="border font-medium p-4 text-left text-gray-400">LOB</th>
-                                <th class="border font-medium p-4 text-left text-gray-400">Penyebab Klaim</th>
-                                <th class="border font-medium p-4 text-left text-gray-400">Jumlah Nasabah</th>
-                                <th class="border font-medium p-4 text-left text-gray-400">Beban Klaim</th>
+                                <th class="border font-medium p-4 text-center text-gray-400">LOB</th>
+                                <th class="border font-medium p-4 text-center text-gray-400">Penyebab Klaim</th>
+                                <th class="border font-medium p-4 text-center text-gray-400">Jumlah Nasabah</th>
+                                <th class="border font-medium p-4 text-center text-gray-400">Beban Klaim</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white">
@@ -57,9 +57,9 @@
                                         <td class="border border-slate-100 p-4 text-gray-400">{{ $klaim->lob }}</td>
                                         <td class="border border-slate-100 p-4 text-gray-400">
                                             {{ $klaim->penyebab_klaim }}</td>
-                                        <td class="border border-slate-100 p-4 text-gray-400">
+                                        <td class="border border-slate-100 p-4 text-right text-gray-400">
                                             {{ number_format($klaim->total_terjamin) }}</td>
-                                        <td class="border border-slate-100 p-4 text-gray-400">
+                                        <td class="border border-slate-100 p-4 text-right text-gray-400">
                                             {{ number_format($klaim->total_beban_klaim, 2, '.') }}</td>
                                     </tr>
 
@@ -72,9 +72,9 @@
                                 <tr class="bg-cyan-600">
                                     <td colspan="2" class="border border-slate-100 p-4 font-bold text-white">Subtotal
                                         {{ $lob }}</td>
-                                    <td class="border border-slate-100 p-4 font-bold text-white">
+                                    <td class="border border-slate-100 p-4 text-right font-bold text-white">
                                         {{ number_format($subtotalTerjamin) }}</td>
-                                    <td class="border border-slate-100 p-4 font-bold text-white">
+                                    <td class="border border-slate-100 p-4 text-right font-bold text-white">
                                         {{ number_format($subtotalBebanKlaim, 2, '.') }}</td>
                                 </tr>
 
@@ -86,9 +86,9 @@
 
                             <tr class="bg-gray-500">
                                 <td colspan="2" class="border-b border-slate-100 p-4 font-bold text-white">Total</td>
-                                <td class="border-b border-slate-100 p-4 font-bold text-white">
+                                <td class="border border-slate-100 p-4 text-right font-bold text-white">
                                     {{ number_format($grandTotalTerjamin) }}</td>
-                                <td class="border-b border-slate-100 p-4 font-bold text-white">
+                                <td class="border border-slate-100 p-4 text-right font-bold text-white">
                                     {{ number_format($grandTotalBebanKlaim, 2, '.') }}</td>
                             </tr>
                         </tbody>
